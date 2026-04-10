@@ -1,5 +1,5 @@
 <h1 align="center">Hi, I'm Zia 👋</h1>
-<h3 align="center">DevOps • MLOps • Machine Learning Engineer</h3>
+<h3 align="center">AI Engineer • MLOps • Cloud & Data-Driven Systems</h3>
 
 <p align="center">
   <a href="https://github.com/ziaur390"><img src="https://img.shields.io/github/followers/ziaur390?label=Followers&style=social"></a>
@@ -9,47 +9,128 @@
 ---
 
 ## 🚀 About Me
-Final-year CS student specializing in **DevOps, Cloud, Machine Learning, and MLOps**.  
-I build **CI/CD pipelines, containerized apps, ML deployments, and scalable cloud systems**.
 
-- 🔧 DevOps Tools: Docker, Jenkins, GitHub Actions, Kubernetes, Terraform  
-- ☁️ Cloud: AWS (EC2, S3, IAM)  
-- 🤖 ML/AI: PyTorch, TensorFlow, RAG Systems, CNNs, YOLO  
-- 🔥 Focus: DevOps, MLOps, Deep Learning, AI Engineering  
-- 📚 Self-learner • Project-based learner
+Final-year Computer Science student building **AI-powered, scalable systems** that solve real-world problems across healthcare, business, and digital platforms.
+
+I specialize in combining **Machine Learning, MLOps, and Cloud Engineering** to move models from research → production → impact.
+
+- 🤖 Strong focus on **AI-first problem solving**
+- 📊 Experience in **data-driven decision systems**
+- ⚙️ Building **end-to-end ML pipelines (training → deployment → monitoring)**
+- 🌍 Interested in **AI applications in fintech, healthcare, and digital platforms**
+
+---
+
+## 🧠 Core Expertise
+
+### 🔹 AI & Machine Learning
+- Deep Learning (CNNs, Neural Networks)
+- Computer Vision (YOLO, Medical Imaging)
+- RAG Systems (LLMs + Vector Databases)
+- Model Evaluation & Optimization
+- Data Preprocessing & Feature Engineering
+
+### 🔹 MLOps & DevOps
+- CI/CD for ML pipelines (GitHub Actions, Jenkins)
+- Docker & Containerized ML Systems
+- Model Deployment (FastAPI, REST APIs)
+- Workflow Automation & Monitoring
+
+### 🔹 Cloud & Infrastructure
+- AWS (EC2, S3, IAM)
+- Scalable deployment architectures
+- Infrastructure as Code (Terraform - basics)
+- Nginx & production setups
+
+### 🔹 AI Tools & Modern Workflows
+- AI-assisted development (Claude, LLM tools)
+- Prompt engineering & AI workflows
+- Model Context Protocol (MCP - learning)
+- API-based AI integrations
 
 ---
 
 ## 🛠️ Tech Stack
 
-**DevOps & Cloud**  
-Docker • Docker Compose • Jenkins • Git • GitHub • Kubernetes • Terraform • Nginx • AWS (EC2/S3/IAM)
+**AI & Data**  
+Python • NumPy • Pandas • Scikit-learn • PyTorch • TensorFlow • Keras • YOLO • RAG • OpenAI/LLM APIs  
 
-**Machine Learning & AI**  
-Python • NumPy • Pandas • Scikit-learn • PyTorch • TensorFlow • Keras • YOLO • RAG • FastAPI
+**MLOps & Backend**  
+FastAPI • Docker • Docker Compose • Jenkins • GitHub Actions • REST APIs  
 
-**Languages & Development**  
-Python • C++ • C# • JavaScript • SQL • .NET • React (Basic)
+**Cloud & DevOps**  
+AWS (EC2/S3/IAM) • Kubernetes (basic) • Terraform (basic) • Nginx  
+
+**Development**  
+Python • C++ • JavaScript • SQL • React (basic)
 
 ---
 
-## 📌 Featured Projects
+## 📌 Featured Projects (AI + Impact Focused)
 
-### 🔥 **MLOps CI/CD Pipeline**
-🔗 https://github.com/ziaur390/mlops-ci-cd-pipeline  
-Automated ML training + deployment using Jenkins, Docker, GitHub, and FastAPI.
+### 🧠 **AI Spine Disease Detection System**
+Medical imaging system for detecting spine-related conditions using deep learning.
 
-### ⚡ **FastAPI ML Deployment**
-🔗 https://github.com/ziaur390/fastapi-ml-docker  
-Containerized ML inference API using FastAPI + Docker Compose.
+- 🏥 Real-world dataset collection & labeling with expert input  
+- 🔍 Image preprocessing + model training  
+- 🔥 Grad-CAM visualization for explainability  
+- 🎯 Focus: AI in healthcare & diagnostic support  
 
-### 📊 **Loan Predictor (FastAPI + CI/CD)**
-🔗 https://github.com/ziaur390/deploy-ml-loan-predictor  
-End-to-end ML deployment with UI + backend.
+---
 
-### 🏠 **Pakistan Real Estate RAG Chatbot**
-🔗 https://github.com/ziaur390/Pakistan-Real-estate-asistant  
-RAG pipeline using embeddings + vector DB + LLM.
+### 🌸 **Flower Detection using YOLOv9**
+Real-time object detection system for multi-class flower classification.
+
+- ⚡ YOLO-based detection pipeline  
+- 📊 Dataset preparation & annotation  
+- 📈 Performance evaluation (accuracy, detection metrics)  
+
+---
+
+### 🏠 **Pakistan Real Estate AI Assistant (RAG)**
+LLM-powered chatbot for answering real estate queries.
+
+- 🧠 Retrieval-Augmented Generation (RAG)  
+- 📂 Vector database + embeddings  
+- 💬 Natural language interaction system  
+
+---
+
+### ⚙️ **MLOps CI/CD Pipeline**
+End-to-end ML automation pipeline.
+
+- 🔄 Automated training + deployment  
+- 🐳 Docker-based containerization  
+- ⚡ Jenkins + GitHub integration  
+- 🚀 Production-ready ML workflow  
+
+---
+
+### ⚡ **FastAPI ML Deployment System**
+Scalable ML inference API.
+
+- 🚀 REST API for model predictions  
+- 🐳 Dockerized deployment  
+- 📡 Production-ready backend system  
+
+---
+
+### 📊 **Loan Prediction System (End-to-End)**
+Complete ML system with UI + backend.
+
+- 📈 Data preprocessing + training  
+- 🌐 API + frontend integration  
+- 🎯 Business-focused prediction system  
+
+---
+
+## 📚 Certifications & Learning
+
+- 🧠 AI Fluency & Foundations (Anthropic)
+- 🤖 Claude API & AI Development Workflows
+- ⚙️ Model Context Protocol (MCP)
+- ☁️ Cloud & DevOps Learning Path (AWS + CI/CD)
+- 📊 Deep Learning Specialization (Coursera)
 
 ---
 
@@ -62,14 +143,16 @@ RAG pipeline using embeddings + vector DB + LLM.
 
 ---
 
-## 🎯 Current Goals
-- Master DevOps (Docker → Kubernetes → Terraform → CI/CD)
-- Build hands-on AI/MLOps projects  
-- Prepare for cloud + ML internships  
-- Become job-ready before graduation
+## 🎯 Current Focus
+
+- Building **AI-powered real-world applications**
+- Strengthening **MLOps + Cloud deployment skills**
+- Developing **AI systems for business & healthcare**
+- Preparing for **AI-focused graduate programs & roles**
 
 ---
 
 ## 📫 Contact
-- Email: **ziaurrahman.26261@gmail.com**  
-- LinkedIn: **linkedin.com/in/zia-ur-rahman-68781a26a**
+
+- 📧 Email: ziaurrahman.26261@gmail.com  
+- 💼 LinkedIn: linkedin.com/in/zia-ur-rahman-68781a26a  
