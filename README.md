@@ -153,7 +153,6 @@ AI system for business decision support.
 - Building **AI systems for real-world impact**
 - Strengthening **MLOps & cloud deployment**
 - Developing **LLM-powered applications**
-- Preparing for **AI-first roles (JazzWorld AI Associate Programme)**
 
 ---
 
