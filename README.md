@@ -98,8 +98,11 @@ End-to-end credit-scoring deployment to Azure Cloud with database-sourced data p
 **LLMs, RAG & Agentic Tooling**
 `RAG Pipelines` `Weaviate` `Document Embeddings` `Hybrid Search & Reranking` `Prompt Engineering` `Claude API` `Gemini / Vertex AI` `Model Context Protocol (MCP)` `Claude Code` `Agent Harness & Loop Design`
 
-**MLOps & Cloud**
-`Docker` `Docker Compose` `Kubernetes` `Jenkins` `GitHub Actions` `Terraform` `Nginx` `Linux` `MLflow` `Model Versioning` `Automated Retraining` `AWS (EC2, S3, IAM, VPC)` `Azure ML` `GCP (Cloud Run, GCS, Pub/Sub, Vertex AI)`
+**DevOps, Infrastructure & Cloud**
+`Docker` `Docker Compose` `Kubernetes` `Ansible` `Terraform` `Jenkins` `GitHub Actions` `Nginx` `Linux` `Bash` `Prometheus` `Grafana` `CloudWatch` `DNS` `SSL/TLS` `Firewalls & Security Groups` `TCP/IP` `Subnetting` `NAT` `VPNs` `AWS (EC2, S3, IAM, VPC, CloudWatch)` `Azure ML` `GCP (Cloud Run, GCS, Pub/Sub, Vertex AI, Cloud Scheduler)`
+
+**MLOps**
+`MLflow` `Model Versioning` `Automated Retraining` `Experiment Tracking` `Dockerised Model Serving`
 
 **Backend & Frontend**
 `Python` `FastAPI` `Flask` `REST APIs` `WebSockets` `C#` `.NET WinForms` `React` `JavaScript` `Vite` `Tailwind CSS`
