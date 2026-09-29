@@ -1,6 +1,6 @@
 <h1 align="center">Zia ur Rahman</h1>
 
-<h3 align="center">AI / ML &nbsp;•&nbsp; Computer Vision &nbsp;•&nbsp; MLOps &amp; Cloud &nbsp;•&nbsp; Full-Stack (.NET / React)</h3>
+<h3 align="center">AI / ML Engineer &nbsp;•&nbsp; Infrastructure &amp; DevOps &nbsp;•&nbsp; MLOps &amp; Cloud &nbsp;•&nbsp; Computer Vision</h3>
 
 <p align="center">
   <a href="https://github.com/ziaur390"><img src="https://img.shields.io/github/followers/ziaur390?label=Followers&style=social" alt="Followers"></a>
@@ -55,6 +55,25 @@ Reliable message processing: no lost events, no duplicate writes, no poison mess
 - PostgreSQL **integration tests** against a real database, not SQLite, with a GitHub Actions pipeline that runs the suite against a PostgreSQL service container **before** building the image
 - Separate **liveness and readiness** endpoints, so a database blip cannot make orchestration restart a healthy container
 - Docker Compose test profile using a disposable database service, keeping test data isolated from development data
+
+#### 🖥️ [server-operations-lab](https://github.com/ziaur390/server-operations-lab) — Linux Server Operations
+Deploy and operate a real service on Ubuntu, with the boring parts done properly.
+**`Ubuntu` `Ansible` `Docker Compose` `Nginx` `PostgreSQL` `Bash` `GitHub Actions`**
+
+- Deployed a FastAPI and PostgreSQL service behind an **Nginx reverse proxy**, with **Ansible** automating server configuration
+- Bash **health-check, database backup and database restore** scripts, including a **restore into a fresh database to verify data integrity**
+- **[Troubleshooting record](https://github.com/ziaur390/server-operations-lab/blob/main/docs/troubleshooting.md)** documenting twelve real failures hit during the build and how each was fixed
+- Every module built on its own branch and merged through a pull request, so the review trail is visible in the history
+
+#### 🛠️ [fregee](https://github.com/ziaur390/fregee) — Host Provisioning and Model Serving Operations
+A service that provisions its own host, then measures three serving runtimes with confidence intervals instead of asserting they are fast.
+**`Ansible` `Terraform` `systemd` `ufw` `Docker` `Prometheus` `Alertmanager` `Grafana` `ONNX`**
+
+- **Host provisioning and hardening** via Ansible roles: user and SSH key-only policy, **ufw deny-by-default firewall**, Docker with log caps, logrotate, and systemd units with a dedicated service user and `ProtectSystem=strict`
+- **Backup with verified restore:** a systemd timer archives, restores into a scratch database, and asserts row-count and checksum parity, **failing loudly if the restore disagrees** rather than reporting an unrecoverable backup
+- **Drift detection** on a timer (PSI per feature, KS corroboration) publishing to Prometheus textfiles, with alert rules, Alertmanager and a provisioned Grafana dashboard
+- **A benchmark harness with stated methodology:** three runtimes sharing one set of weights, paired bootstrap confidence intervals, and tail-power reporting. The honest finding is that int8 is **not uniformly faster** — it wins at small batches and loses at batch 64 concurrency 4
+- Also documented a real export trap: quantising `Conv` produced `ConvInteger` nodes that onnxruntime's CPU provider cannot load, so the export now **validates each candidate by running it** and falls back
 
 ---
 
@@ -136,7 +155,7 @@ End-to-end credit-scoring deployment to Azure Cloud with database-sourced data p
 `RAG Pipelines` `Weaviate` `Document Embeddings` `Hybrid Search & Reranking` `Prompt Engineering` `Claude API` `Gemini / Vertex AI` `Model Context Protocol (MCP)` `Claude Code` `Agent Harness & Loop Design`
 
 **DevOps, Infrastructure & Cloud**
-`Docker` `Docker Compose` `Kubernetes` `Ansible` `Terraform` `Jenkins` `GitHub Actions` `Nginx` `Linux` `Bash` `RabbitMQ` `Apache Kafka` `Prometheus` `Grafana` `CloudWatch` `DNS` `SSL/TLS` `Firewalls & Security Groups` `TCP/IP` `Subnetting` `NAT` `VPNs` `AWS (EC2, S3, IAM, VPC, CloudWatch)` `Azure` `GCP (Cloud Run, GCS, Pub/Sub, Vertex AI, Cloud Scheduler)`
+`Docker` `Docker Compose` `Kubernetes` `Ansible` `Terraform` `systemd` `ufw` `logrotate` `Jenkins` `GitHub Actions` `Nginx` `Linux` `Bash` `RabbitMQ` `Apache Kafka` `Prometheus` `Alertmanager` `Grafana` `CloudWatch` `DNS` `SSL/TLS` `Firewalls & Security Groups` `TCP/IP` `Subnetting` `NAT` `VPNs` `AWS (EC2, S3, IAM, VPC, CloudWatch)` `Azure` `GCP (Cloud Run, GCS, Pub/Sub, Vertex AI, Cloud Scheduler)`
 
 **MLOps**
 `MLflow` `Model Versioning` `Automated Retraining` `Experiment Tracking` `Dockerised Model Serving`
