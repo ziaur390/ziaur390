@@ -37,7 +37,7 @@ Modular IoT safety architecture for coal mines with no dependency on pre-built u
 
 ### ⚙️ Infrastructure, Streaming & DevOps
 
-#### 🖥️ [kvm_tomacat](https://github.com/ziaur390/kvm_tomacat) — KVM Virtualization, Tomcat and Verified Recovery
+#### 🖥️ [kvm_tomcat](https://github.com/ziaur390/kvm_tomcat) — KVM Virtualization, Tomcat and Verified Recovery
 A two-tier Java application tier on KVM virtual machines, sized with a measured load test rather than a guess. Every claim has raw output behind it in `docs/evidence/`.
 **`KVM` `libvirt` `qcow2` `cloud-init` `Ansible` `Apache` `Tomcat 10` `JSP` `Prometheus` `Grafana` `ufw`**
 
