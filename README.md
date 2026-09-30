@@ -13,7 +13,7 @@
 
 I build AI, infrastructure and full-stack systems that reach production. My work sits across **message-driven pipelines and DevOps**, **deep learning and computer vision**, and **full-stack software engineering**, with a peer-reviewed publication and business software running in daily commercial use.
 
-- ⚙️ **Reliable infrastructure** — an event pipeline with at-least-once delivery, dead-letter queues, Redis deduplication and Kubernetes deployment
+- ⚙️ **Reliable infrastructure** — KVM-virtualized application tiers, event pipelines with at-least-once delivery and dead-letter queues, and backups whose restore is verified
 - 🔗 **LLM & RAG systems** — citation-grounded legal retrieval and bilingual voice intake, on GCP
 - 🏥 **Medical imaging** — deployed spinal X-ray diagnostic platform, awarded Best Final Year Project
 - 💼 **Production business software** — a C#/.NET system pharmacy distributors run daily operations on
@@ -36,6 +36,18 @@ Modular IoT safety architecture for coal mines with no dependency on pre-built u
 ## 🚀 Featured Projects
 
 ### ⚙️ Infrastructure, Streaming & DevOps
+
+#### 🖥️ [kvm_tomacat](https://github.com/ziaur390/kvm_tomacat) — KVM Virtualization, Tomcat and Verified Recovery
+A two-tier Java application tier on KVM virtual machines, sized with a measured load test rather than a guess. Every claim has raw output behind it in `docs/evidence/`.
+**`KVM` `libvirt` `qcow2` `cloud-init` `Ansible` `Apache` `Tomcat 10` `JSP` `Prometheus` `Grafana` `ufw`**
+
+- **Two-tier architecture on KVM VMs**: Apache reverse-proxies to Tomcat 10 serving a deployed WAR, with the application port **firewalled to the web tier** so the proxy is load-bearing rather than decorative
+- **Idempotent Ansible**: second run reports `changed=0` on both hosts, with the build artifact made reproducible (`zip -X`) so the idempotency claim is not quietly false
+- **VM lifecycle operations**: snapshots, rollback, and **live vCPU and memory hot-add on a running guest**
+- **Backup with verified restore**: SHA-256 manifest, restore-to-scratch comparison, off-VM copy checksum-verified after transfer. A **tamper drill proves the check rejects a corrupted archive with a non-zero exit code**
+- **Measured capacity test** (ab, 1/2/4 vCPU): 17.9 → 44.1 req/s, p95 1497 → 761 ms. It also reports what the data **rules out**: the application tier is CPU-bound at 100%, the proxy holds 14%, and the host never saturates. ~20% systematic variance is stated rather than hidden
+- **Disaster recovery measured at 348 s** from total VM loss to a working service
+- Includes a **VMware and Hyper-V equivalence table**, because the tooling used was KVM and saying so plainly is stronger than implying otherwise
 
 #### 🔀 [event-pipeline](https://github.com/ziaur390/event-pipeline) — Event-Driven Data Pipeline
 Reliable message processing: no lost events, no duplicate writes, no poison message blocking the queue.
@@ -155,7 +167,7 @@ End-to-end credit-scoring deployment to Azure Cloud with database-sourced data p
 `RAG Pipelines` `Weaviate` `Document Embeddings` `Hybrid Search & Reranking` `Prompt Engineering` `Claude API` `Gemini / Vertex AI` `Model Context Protocol (MCP)` `Claude Code` `Agent Harness & Loop Design`
 
 **DevOps, Infrastructure & Cloud**
-`Docker` `Docker Compose` `Kubernetes` `Ansible` `Terraform` `systemd` `ufw` `logrotate` `Jenkins` `GitHub Actions` `Nginx` `Linux` `Bash` `RabbitMQ` `Apache Kafka` `Prometheus` `Alertmanager` `Grafana` `CloudWatch` `DNS` `SSL/TLS` `Firewalls & Security Groups` `TCP/IP` `Subnetting` `NAT` `VPNs` `AWS (EC2, S3, IAM, VPC, CloudWatch)` `Azure` `GCP (Cloud Run, GCS, Pub/Sub, Vertex AI, Cloud Scheduler)`
+`Docker` `Docker Compose` `Kubernetes` `KVM / libvirt` `qcow2` `cloud-init` `Ansible` `Terraform` `systemd` `ufw` `logrotate` `Jenkins` `GitHub Actions` `Nginx` `Apache` `Tomcat` `Linux` `Bash` `RabbitMQ` `Apache Kafka` `Prometheus` `Alertmanager` `Grafana` `CloudWatch` `DNS` `SSL/TLS` `Firewalls & Security Groups` `TCP/IP` `Subnetting` `NAT` `VPNs` `AWS (EC2, S3, IAM, VPC, CloudWatch)` `Azure` `GCP (Cloud Run, GCS, Pub/Sub, Vertex AI, Cloud Scheduler)`
 
 **MLOps**
 `MLflow` `Model Versioning` `Automated Retraining` `Experiment Tracking` `Dockerised Model Serving`
